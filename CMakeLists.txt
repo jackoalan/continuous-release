@@ -95,7 +95,7 @@ set(LLVM_MOS_PACKAGE_PATH
 find_program(LLVM_MOS_ZIP zip REQUIRED)
 add_custom_target(package
     COMMAND 
-        ${LLVM_MOS_ZIP} -FSr -9 -v
+        ${LLVM_MOS_ZIP} -FSry -9 -v
             ${LLVM_MOS_PACKAGE_PATH}
             ./
     WORKING_DIRECTORY ${LLVM_MOS_INSTALL_DIR}/..
